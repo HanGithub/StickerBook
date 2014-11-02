@@ -14,18 +14,26 @@ body {
 }
 
 
+#book {
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+
 .page {
-   margin: 25px auto 25px auto;
-   padding: 1in;
+   margin: 0;
+   padding: 75px;
    background-color: white;
-   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-   width: 9in;
-   height: 6.5in;
-   position: relative;
+   /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); */
+   width: 874px;
+   height: 618px;
+   position: absolute;
    overflow: hidden;
    line-height: 180%;
 }
-
 
 .left {
    float: left;
@@ -46,14 +54,7 @@ p {
    text-align: left;
 }
 
-/*
-p:first-of-type:first-letter {
-   font-size: 42pt;
-}
-*/
-
 p.prompt {
-   margin: 0.1in 0.75in;
    font-size: 12pt;
    text-align: center;
 }
@@ -90,16 +91,22 @@ p.instructions {
 img.program {
    display: block;
    margin: 0.2in auto 0.1in auto;
+   min-height: 120px;
+}
+
+img.program2 {
+   display: block;
+   margin: 0.2in auto 0.1in auto;
+   min-height: 120px;   
 }
 
 
 img.illustration {
    display: block;
    position: absolute;
-   width: 8in;
-   height: 8in;
-   left: 1.5in;
-   top: 0.25in;
+   left: 112px;
+   top: 0px;
+   width: 800px;
 }
 
 
@@ -109,4 +116,103 @@ figure {
    display: block;
    width: 3.35in;
    text-align: center;
+}
+
+button {
+   width: 80px;
+   height: 30px;
+}
+
+#prev-button {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+#next-button {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+.menu{
+  overflow：hidden;
+  width: 700px;
+  height: 200px;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
+
+#slots{
+  width: 100%;
+}
+
+img.hide {display:none;}
+img.bigger {
+  width: 1.2in;
+  height: 215px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img.bigger_page11 {
+  width: 1.0in;
+  height: 180px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img.bigger_extra {
+  width: 1.12in;
+  height: 195px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img.bigger_repeat {
+  width: 1.2in;
+  height: 225px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.inline { float:left; }
+.clearBoth { clear:both; }
+
+
+.over {
+  border: solid 5px purple;
+}
+
+#dialog{
+ 
+}
+
+.playbutton{
+  width:150px;
+  height:100px;
+  float:right;
+}
+
+.playbutton_page11{
+  width:150px;
+  height:100px;
+  float:right;
+}
+
+.playbutton_page15{
+  width:150px;
+  height:100px;
+  float:right;
+}
+
+.move{
+  margin-left: 100px;
+  margin-right: auto;
+  height: 400px;
 }
